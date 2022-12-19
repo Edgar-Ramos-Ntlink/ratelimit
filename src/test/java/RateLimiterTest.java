@@ -184,7 +184,7 @@ public class RateLimiterTest {
     }
 
     @Test
-    public void rateLimiter_invalidRequest_simpleDefinition_overLimitMultipleWithTimeReset() throws InterruptedException {
+    public void rateLimiter_invalidRequest_simpleDefinition_overLimitMultipleWithTimeReset()  {
         Set<String> keys = Stream.of("User1:/api/v1/developers")
                 .collect(Collectors.toCollection(HashSet::new));
         RequestLimitRule rule = new RequestLimitRule(10, 4, keys);
@@ -199,7 +199,7 @@ public class RateLimiterTest {
     }
 
     @Test
-    public void rateLimiter_invalidRequest_complexDefinition_overLimitMultipleWithTimeReset() throws InterruptedException {
+    public void rateLimiter_invalidRequest_complexDefinition_overLimitMultipleWithTimeReset() {
         Set<String> keysUser1 = Stream.of("User1:/api/v1/developers")
                 .collect(Collectors.toCollection(HashSet::new));
         Set<String> keysUser2 = Stream.of("User2:/api/v1/developers")
@@ -224,4 +224,5 @@ public class RateLimiterTest {
         assertFalse(requestRateLimiter.overLimitWhenIncremented("User1:/api/v1/developers", 2));
         assertFalse(requestRateLimiter.overLimitWhenIncremented("User2:/api/v1/developers", 2));
     }
+
 }

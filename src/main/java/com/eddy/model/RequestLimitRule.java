@@ -3,6 +3,10 @@ package com.eddy.model;
 import java.util.Objects;
 import java.util.Set;
 
+import static com.eddy.model.RateLimitConstants.DEFAULT_DURATION;
+import static com.eddy.model.RateLimitConstants.DEFAULT_LIMIT;
+import static com.eddy.model.RateLimitConstants.DEFAULT_PRECISION;
+
 public class RequestLimitRule {
     private int duration;
     private long limit;
@@ -11,16 +15,16 @@ public class RequestLimitRule {
     private Set<String> keys;
 
     public RequestLimitRule() {
-        this.duration = 60;
-        this.precision = 60;
-        this.limit = 100;
+        this.duration = DEFAULT_DURATION;
+        this.precision = DEFAULT_PRECISION;
+        this.limit = DEFAULT_LIMIT;
     }
 
     public RequestLimitRule(Set<String> keys) {
         this.keys = keys;
-        this.duration = 60;
-        this.precision = 60;
-        this.limit = 100;
+        this.duration = DEFAULT_DURATION;
+        this.precision = DEFAULT_PRECISION;
+        this.limit = DEFAULT_LIMIT;
     }
 
     public RequestLimitRule(int duration, long limit, Set<String> keys) {

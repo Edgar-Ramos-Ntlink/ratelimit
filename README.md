@@ -26,7 +26,7 @@ A Java library for rate limiting, assembled using internal memory. The library's
 <dependency>
   <groupId>com.eddy</groupId>
   <artifactId>ratelimit</artifactId>
-  <version>${com.eddy.version}</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 
@@ -37,16 +37,28 @@ Edgar Joseduardo Ramos Silveyra
 #### Basic Synchronous Example
 
 ```java
-    //Define keys to calculate their limit
-    Set<String> keys = Stream.of("edgar:POST", "edgar:PUT")
+    //Define keys to manage their limit
+        Set<String> keys = Stream.of("User1:/api/v1/developers")
         .collect(Collectors.toCollection(HashSet::new));
-    //Define ratelimit configs
-    RequestLimitRule rule = new RequestLimitRule(60,4,keys);
-    Set<RequestLimitRule> rules = Stream.of(rule)
+        //Define ratelimit configs
+        //First parameter is time in seconds
+        //Second parameter is threshold limit
+        //Third parameter are the key rules
+        RequestLimitRule rule = new RequestLimitRule(60, 3, keys);
+        Set<RequestLimitRule> rules = Stream.of(rule)
         .collect(Collectors.toCollection(HashSet::new));
-    InMemoryRequestRateLimiter requestRateLimiter = new InMemoryRequestRateLimiter(rules);
-    //example use
-    boolean overLimit = requestRateLimiter.overLimitWhenIncremented("PUT");
+        RateLimiter requestRateLimiter = new RateLimiter(rules);
+        //Increment action by specific weight
+        boolean overLimit = requestRateLimiter.overLimitWhenIncremented("User1:/api/v1/developers", 2);
+        //will print false if the limit is not exceeded
+        System.out.println(overLimit);
+        //Increment action by 1
+        overLimit = requestRateLimiter.overLimitWhenIncremented("User1:/api/v1/developers");
+        //will print false because the limit is not exceeded
+        System.out.println(overLimit);
+        overLimit = requestRateLimiter.overLimitWhenIncremented("User1:/api/v1/developers");
+        //will print true because the limit is not exceeded
+        System.out.println(overLimit);
 ```
 
 #### Project versions

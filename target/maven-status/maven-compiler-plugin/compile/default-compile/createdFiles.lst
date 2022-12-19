@@ -1,6 +1,7 @@
 com\eddy\tool\SystemTimeSupplier.class
+com\eddy\tool\RulesSupplier.class
+com\eddy\request\RateLimiter.class
 com\eddy\model\RequestLimitRule.class
-com\eddy\model\DefaultRequestLimitRulesSupplier.class
 com\eddy\model\SavedKey.class
 com\eddy\request\LimitRulesSupplier.class
-com\eddy\request\RateLimiter.class
+com\eddy\model\RateLimitConstants.class
