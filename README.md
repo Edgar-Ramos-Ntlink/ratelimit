@@ -9,7 +9,7 @@ A Java library for rate limiting, assembled using internal memory. The library's
 ### Dependencies
 -Java 11
 
-
+#### Import project
 ```xml
 <dependency>
   <groupId>com.eddy</groupId>
@@ -23,6 +23,7 @@ A Java library for rate limiting, assembled using internal memory. The library's
 Edgar Joseduardo Ramos Silveyra
 
 #### Basic Synchronous Example
+
 ```java
     //Define keys to calculate their limit
     Set<String> keys = Stream.of("edgar:POST", "edgar:PUT")
@@ -36,6 +37,6 @@ Edgar Joseduardo Ramos Silveyra
     boolean overLimit = requestRateLimiter.overLimitWhenIncremented("PUT");
 ```
 
-#### Import project
+#### Project versions
 
 1.0.0 Initial Version

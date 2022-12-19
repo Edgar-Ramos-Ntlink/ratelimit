@@ -1,8 +1,7 @@
 C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\Main2.java
-C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\request\InMemoryRequestRateLimiter.java
-C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\Main.java
-C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\models\DefaultRequestLimitRulesSupplier.java
-C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\request\RequestLimitRulesSupplier.java
-C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\models\SystemTimeSupplier.java
-C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\models\RequestLimitRule.java
-C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\models\SavedKey.java
+C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\model\DefaultRequestLimitRulesSupplier.java
+C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\model\SavedKey.java
+C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\tool\SystemTimeSupplier.java
+C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\model\RequestLimitRule.java
+C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\request\LimitRulesSupplier.java
+C:\Users\eramoss\Documents\GitHub\Eddy\ratelimit\src\main\java\com\eddy\request\RateLimiter.java

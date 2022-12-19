@@ -1,8 +1,7 @@
-com\eddy\Main.class
 com\eddy\Main2.class
-com\eddy\request\InMemoryRequestRateLimiter.class
-com\eddy\request\RequestLimitRulesSupplier.class
-com\eddy\models\DefaultRequestLimitRulesSupplier.class
-com\eddy\models\RequestLimitRule.class
-com\eddy\models\SavedKey.class
-com\eddy\models\SystemTimeSupplier.class
+com\eddy\tool\SystemTimeSupplier.class
+com\eddy\request\RateLimiter.class
+com\eddy\model\RequestLimitRule.class
+com\eddy\model\DefaultRequestLimitRulesSupplier.class
+com\eddy\model\SavedKey.class
+com\eddy\request\LimitRulesSupplier.class
