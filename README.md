@@ -38,4 +38,4 @@ Edgar Joseduardo Ramos Silveyra
 
 #### Import project
 
-1.0,0 Version inicial
+1.0.0 Initial Version
