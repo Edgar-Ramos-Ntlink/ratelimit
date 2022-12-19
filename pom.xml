@@ -29,15 +29,15 @@
             <version>${reactor-core.version}</version>
         </dependency>
         <dependency>
+            <groupId>net.jodah</groupId>
+            <artifactId>expiringmap</artifactId>
+            <version>${expiringmap.version}</version>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.jodah</groupId>
-            <artifactId>expiringmap</artifactId>
-            <version>${expiringmap.version}</version>
         </dependency>
     </dependencies>
 </project>

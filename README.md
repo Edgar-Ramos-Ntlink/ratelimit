@@ -7,7 +7,19 @@ A Java library for rate limiting, assembled using internal memory. The library's
 -Multiple limit rules per instance
 
 ### Dependencies
--Java 11
+* Java 11
+* Maven
+
+### External Dependencies installed with maven
+* guava
+* reactor-core
+* expiringmap
+* junit
+
+### Install code in IntellIj
+
+* Open Folder code as Maven Project
+* Install code using the following maven Command ```java mvn clean install -U```
 
 #### Import project
 ```xml

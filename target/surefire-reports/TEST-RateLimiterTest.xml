@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="12" failures="0" name="RateLimiterTest" time="0.063" errors="0" skipped="2">
+<testsuite tests="12" failures="0" name="RateLimiterTest" time="0.058" errors="0" skipped="2">
   <properties>
     <property name="idea.version" value="2022.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -64,18 +64,18 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="RateLimiterTest" name="rateLimiter_invalidRequest_simpleDefinition_overLimitMultipleWithTimeReset" time="0.051"/>
-  <testcase classname="RateLimiterTest" name="rateLimiter_validRequest_defaultDefinition" time="0.001"/>
-  <testcase classname="RateLimiterTest" name="rateLimiter_invalidRequest_complexDefinition_overLimitMultipleWithTimeReset" time="0.002"/>
+  <testcase classname="RateLimiterTest" name="rateLimiter_invalidRequest_simpleDefinition_overLimitMultipleWithTimeReset" time="0.049"/>
+  <testcase classname="RateLimiterTest" name="rateLimiter_validRequest_defaultDefinition" time="0"/>
+  <testcase classname="RateLimiterTest" name="rateLimiter_invalidRequest_complexDefinition_overLimitMultipleWithTimeReset" time="0.001"/>
   <testcase classname="RateLimiterTest" name="rateLimiter_invalidRequest_simpleDefinition_underLimitSimple" time="0.001"/>
   <testcase classname="RateLimiterTest" name="rateLimiter_invalidRequest_simpleDefinition_overLimitSimple" time="0.001"/>
-  <testcase classname="RateLimiterTest" name="rateLimiter_invalidRequest_simpleDefinition_overLimitMultipleWithTime" time="0.001">
+  <testcase classname="RateLimiterTest" name="rateLimiter_invalidRequest_simpleDefinition_overLimitMultipleWithTime" time="0.002">
     <skipped/>
   </testcase>
   <testcase classname="RateLimiterTest" name="rateLimiter_invalidRequest_simpleDefinition_underLimitMultiple" time="0.001"/>
   <testcase classname="RateLimiterTest" name="rateLimiter_invalidRequest_complexDefinition" time="0.001"/>
   <testcase classname="RateLimiterTest" name="rateLimiter_invalidRequest_simpleDefinition_overLimitMultiple" time="0.001"/>
-  <testcase classname="RateLimiterTest" name="rateLimiter_invalidRequest_complexDefinition_overLimitMultipleWithTime" time="0.003">
+  <testcase classname="RateLimiterTest" name="rateLimiter_invalidRequest_complexDefinition_overLimitMultipleWithTime" time="0.001">
     <skipped/>
   </testcase>
   <testcase classname="RateLimiterTest" name="rateLimiter_validRequest_complexDefinition" time="0"/>
